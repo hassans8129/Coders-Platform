@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* HERO SECTION */
+
+.main-head {
+    background-color: #172238;
+    color: white;
+}
+
+nav {
+    min-height: 10vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    list-style: none;
+}
+
+#logo {
+    flex: 1 1 40rem;
+    font-size: 1.8rem;
+}
+
+.hero {
+    background-image: url("./images/mac\ with\ iphone.jpg");
+    min-height: 90vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.hero button {
+    border-style: none;
+    padding: 1.5rem;
+    width: 20rem;
+    background-color: rgb(44, 52, 52);
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0px 10px 50px rgb(52, 50, 50);
+}
+
+button:hover {
+    background-color: rgb(223, 207, 104);
+    transition: 0.5s ease-in-out;
+}
+
+
+/* ABOUT SECTION */
+
+section {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+section img {
+    width: 50%;
+    height: auto;
+}
+
+
+/* FOOTER SECTION */
+
+li {
+    list-style: none;
+}
+
+footer p {
+    font-size: 1.5rem;
+    flex: 1 1 40rem;
+}
+
+li img {
+    height: 2rem;
+}
+
+ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #111827;
+    color: white;
+    min-height: 10vh;
+}
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 800px) {
+    html {
+        font-size: 70%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    section img {
+        width: 100%;
+    }
+
+    section p {
+        font-size: 1.3rem;
+    }
+
+    section {
+        flex-wrap: wrap;
+    }
+}
